@@ -1,0 +1,19 @@
+netty:
+  websocket:
+    checkTime: 300
+spring:
+  application:
+    name: im-server
+  jpa:
+    hibernate:
+      ddl-auto: create
+    database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
+    show-sql: true
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/test?characterEncoding=UTF-8
+    username: root
+    password: meet1314
+logging:
+  level:
+    com.xfmeet.websocket.nettywebsocket: debug
