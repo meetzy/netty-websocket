@@ -12,7 +12,7 @@ public class LoginOutEvent<T> extends ApplicationEvent {
     }
     
     @SuppressWarnings("unchecked")
-    public T getConext() {
+    public T getContext() {
         return (T) this.source;
     }
 }
